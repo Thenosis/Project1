@@ -1,8 +1,16 @@
 <!-- Parent component to hold the search form and results -->
 <template>
-  <lightning-card title="Search Inventory">
-    <c-car-inventory-form
-      oncartypeselect={carTypeSelectHandler}
-    ></c-car-inventory-form>
-  </lightning-card>
+  <div class="inventory">
+    <lightning-card title="Search Inventory">
+      <c-car-inventory-form
+        oncartypeselect={carTypeSelectHandler}
+      ></c-car-inventory-form>
+    </lightning-card>
+  </div>
+
+  <div class="inventory">
+    <lightning-card title="Current Inventory">
+      <c-car-inventory-result car-type-id={carTypeId}></c-car-inventory-result>
+    </lightning-card>
+  </div>
 </template>

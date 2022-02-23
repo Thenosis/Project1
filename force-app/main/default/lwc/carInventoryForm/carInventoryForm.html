@@ -14,16 +14,14 @@
         onchange={handleCarTypeChange}
         variant="label-hidden"
         options={carTypes}
+        class="box"
       >
       </lightning-combobox>
     </lightning-layout-item>
 
     <lightning-layout-item>
       <!-- onclick event to create a new car type -->
-      <lightning-button
-        label="New"
-        onclick={createNewCarType}
-      ></lightning-button>
+      <button class="btn" onclick={createNewCarType}>New</button>
     </lightning-layout-item>
   </lightning-layout>
 </template>

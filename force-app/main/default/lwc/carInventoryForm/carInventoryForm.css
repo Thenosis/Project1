@@ -1,0 +1,13 @@
+lightning-combobox {
+  width: 200px;
+}
+
+.btn {
+  height: 30px;
+  background-color: #5c5c5c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0 1rem;
+  margin-left: 1rem;
+}

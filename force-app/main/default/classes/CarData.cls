@@ -51,7 +51,7 @@ public class CarData {
         Car__c car3 = new Car__c(Name='Cadillac CT5-V Blackwing', Contact__c=con3.id, Car_Type__c=carType3.id,
                                 Year__c=2022, Description__c='6.2L Supercharged V8 engine with 668 hp± and 659 lb-ft of torque. 10-speed automatic transmission. Latest-generation Magnetic Ride Control adaptive suspension', Available_For_Test__c=true, 
                                 Mileage__c=20, Price__c=83995,
-                                Picture__c='https://gmauthority.com/blog/wp-content/uploads/2021/12/2022-Cadillac-CT-V-Blackwing-Collector-Series-exterior-Craig-Jackson-delivery-video-003-720x340.jpeg' );
+                                Picture__c='https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-cadillac-ct5-v-blackwing-1-1628524481.jpg' );
 
         Car__c car4 = new Car__c(Name='Dodge Challenger', Contact__c=con2.id, Car_Type__c=carType2.id,
                                 Year__c=2021, Description__c='', Available_For_Test__c=true, 

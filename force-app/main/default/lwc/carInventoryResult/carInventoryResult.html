@@ -4,7 +4,9 @@ from the cars property in our JS file -->
 <template>
   <lightning-layout class="items" multiple-rows horizontal-align="center">
     <template for:each={cars} for:item="car">
-      <lightning-layout-item key={car.Id}> {car.Name} </lightning-layout-item>
+      <lightning-layout-item key={car.Id}>
+        <c-car-card car={car}></c-car-card>
+      </lightning-layout-item>
     </template>
   </lightning-layout>
 </template>

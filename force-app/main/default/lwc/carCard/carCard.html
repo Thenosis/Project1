@@ -1,0 +1,11 @@
+<template>
+  <a onclick={handleCarSelect}>
+    <p>{car.Name}</p>
+    <div>
+      <img class="car-img" src={car.Picture__c} alt="Car Image" />
+      <div>
+        <p class="title">{car.Contact__r.Name}</p>
+      </div>
+    </div>
+  </a>
+</template>

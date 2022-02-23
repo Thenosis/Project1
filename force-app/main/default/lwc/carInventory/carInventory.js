@@ -3,7 +3,6 @@ import { getRecord } from "lightning/uiRecordApi";
 import { NavigationMixin } from "lightning/navigation";
 
 import Model__c from "@salesforce/schema/Vehicle_Inventory__c";
-console.log("Model__c:", Model__c);
 
 export default class CarInventory extends NavigationMixin(LightningElement) {
   createAccount() {

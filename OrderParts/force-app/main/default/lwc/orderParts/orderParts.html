@@ -1,7 +1,19 @@
 <template>
     <lightning-card title="Order Parts">
-        <lightning-record-form object-api-name="OrderItem" fields="Product2Id, Quanitity">
+        <div class="slds-p-horizontal_small">
+            <lightning-record-form
+                    object-api-name={objectName}
+                    fields={objectFields}
+                    columns="2"
+                    density="comfy"
+                    oncancel={handleCancel}
+                    onsubmit={handleSubmit}
+                    onsuccess={handleSucess}
+                    onerror={handleError}            
+            >
+        
+            </lightning-record-form>
+        </div>
             
-        </lightning-record-form>
     </lightning-card>
 </template>

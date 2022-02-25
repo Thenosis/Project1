@@ -1,6 +1,9 @@
+//Mohammed Azad
+//Used for populating the database.Batchable
 public with sharing class QuoteRequests {
 
-    public static void insertinformation() {
+    public static void insertinformation() 
+    {
         List<Quote__c> quoteList = new List<Quote__c>();
         Quote__c quoteOne = new Quote__c(PersonName__c='Billy', Address__c='Down the road', PersonEmail__c='Billy@email.com', Phone__c='11111111111', QuoteRequestId__c=1);
         Quote__c quoteTwo = new Quote__c(PersonName__c='Bobby', Address__c='My house', PersonEmail__c='Bobby@email.com', Phone__c='2222222222', QuoteRequestId__c=1);
@@ -25,8 +28,22 @@ public with sharing class QuoteRequests {
         quoteList.add(quoteTen);
         insert quoteList;
     }
-    public static void directInsertInformation(String name, String adres, String emil, String phn, Integer givenId) {
+    //Single entry of record through passing parameters
+    public static void directInsertInformation(String name, String adres, String emil, String phn, Integer givenId) 
+    {
         Quote__c anotherOne = new Quote__c(PersonName__c=name, Address__c=adres, PersonEmail__c=emil, Phone__c=phn, QuoteRequestId__c=givenId);
         insert anotherOne;
+    }
+        //Single entry delete from the person's name
+    public static void directDelete(String deleteName)
+    {
+        try 
+        {
+            List<Quote__c> deleteList = [SELECT PersonName__c, Phone__c FROM Quote__c WHERE PersonName__c =: deleteName];
+            delete deleteList;
+        } catch (DmlException e) 
+        {
+            System.debug('Sorry no can do, error.');
+        }
     }
 }

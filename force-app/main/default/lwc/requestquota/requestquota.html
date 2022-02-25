@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Request a Quote">
+        <div >
+            <lightning-record-form
+                object-api-name={objectApiName}
+                fields={fields}
+                onsuccess={handleSuccess}
+                oncancel={handleCancel}
+                onsubmit={handleSubmit}
+                density="compact"
+            ></lightning-record-form>
+        </div>
+    </lightning-card>
+</template>

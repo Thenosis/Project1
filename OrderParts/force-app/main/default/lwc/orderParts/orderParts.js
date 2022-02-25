@@ -1,5 +1,8 @@
 import { LightningElement, api, wire, track } from 'lwc';
 
+//import Apex class
+import quantityPrice from '@salesforce/apex/quantityPrice.quantityPrice';
+
 //import of all fields from the Parts Order Custom Object
 import PARTS_ORDER from '@salesforce/schema/Parts_Order__c';
 import CAR from '@salesforce/schema/Parts_Order__c.Car__c';
